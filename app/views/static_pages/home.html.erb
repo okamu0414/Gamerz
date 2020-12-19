@@ -1,0 +1,113 @@
+<html>
+  <head>
+  </head>
+  <body onload="prettyPrint()"> 
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper green">
+          <a href="#!" class="brand-logo">Logo</a>
+          <ul class="right hide-on-med-and-down">
+            <li class="waves-effect waves-light"><a href="">募集</a></li>
+            <li class="waves-effect waves-light"><a href="">DM</a></li>
+            <li class="waves-effect waves-light"><a href="">通知</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger waves-effect waves-light" href="#!" data-target="dropdown1">ユーザ<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="container">
+      <h1 class="center">StaticPages#home</h1>
+      <p class="center">Find me in app/views/static_pages/home.html.erb</p>
+      <div class = "row">
+          <div class = "col s12 m6">
+            <div class = "card blue-grey lighten-4">
+                <div class = "card-content">
+                  <span class = "card-title"><h3>Learn HTML5</h3></span>
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                      HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                      structuring and presenting content on the World Wide Web.</p>
+                </div>
+                
+                <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                      <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                      www.tutorialspoint.com</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class = "col s12 m6">
+            <div class = "card blue-grey lighten-4">
+                <div class = "card-image">
+                  <img src = "html5-mini-logo.jpg">                
+                </div>
+                
+                <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                      HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                      structuring and presenting content on the World Wide Web.</p>
+                </div>
+                
+                <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                      <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                      www.tutorialspoint.com</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class = "row">
+          <div class = "col s12 m6">
+            <div class = "card blue-grey lighten-4">
+                <div class = "card-image waves-effect waves-block waves-light">
+                  <img class = "activator" src = "html5-mini-logo.jpg">                
+                </div>
+                
+                <div class = "card-content activator">                  
+                  <p>Click the image to reveal more information.</p>
+                </div>
+                
+                <div class = "card-reveal">
+                  <span class = "card-title grey-text text-darken-4">HTML5
+                      <i class = "material-icons right">close</i></span>
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                      HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                      structuring and presenting content on the World Wide Web.</p>
+                </div>
+                
+                <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                      <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                      www.tutorialspoint.com</a>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-copyright green">
+      <div class="container grey-text text-lighten-4">
+      © 2020 Copyright okamu0414
+      <a class="grey-text text-lighten-4 right" href="https://github.com/okamu0414">GitHub Link</a>
+      </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, options);
+    });
+    </>
+  </body>
+</html>
