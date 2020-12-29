@@ -1,0 +1,11 @@
+<header class="navbar-fixed">
+  <nav class="green">
+    <div class="nav-wrapper container">
+      <% if user_signed_in? %>
+        <%= render 'layouts/navber_signin' %>
+      <% else %>
+        <%= render 'layouts/navber_notsignin' %>
+      <% end %>
+    </div>
+  </nav>
+</header>
