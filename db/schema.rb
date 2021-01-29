@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_27_170543) do
+ActiveRecord::Schema.define(version: 2021_01_29_094226) do
+
+  create_table "recruitiments", force: :cascade do |t|
+    t.string "title"
+    t.string "used_vc"
+    t.text "one_word"
+    t.string "play_style"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.integer "users_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index "\"user_id\", \"created_at\"", name: "index_recruitiments_on_user_id_and_created_at"
+    t.index ["users_id"], name: "index_recruitiments_on_users_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -40,4 +54,5 @@ ActiveRecord::Schema.define(version: 2020_12_27_170543) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
+  add_foreign_key "recruitiments", "users", column: "users_id"
 end
