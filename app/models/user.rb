@@ -9,4 +9,6 @@ class User < ApplicationRecord
   validates :name, presence: true
   #profileは200文字以内
   validates :profile, length: { maximum: 200 }
+
+  has_many :recruitiments, dependent: :destroy
 end
