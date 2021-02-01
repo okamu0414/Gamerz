@@ -5,5 +5,7 @@ class Recruitiment < ApplicationRecord
   validates :play_style, presence: true, lenth: { maximum: 100 }
   validates :used_vc, presence: true, length: { maximum: 140 }
   validates :one_word, presence: true, length: { maximum: 140 }
-  
+
+  #投稿の順番を降順にする
+  default_scope -> { order(created_at: :desc) }
 end
